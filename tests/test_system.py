@@ -1,9 +1,3 @@
-from app import __version__
-from tests.conftest import client
-
-
-class TestPing:
+class TestSomething:
     def it_returns_the_correct_value(_):
-        response = client.get(url="/ping")
-        assert response.status_code == 200
-        assert response.json() == [True]
+        raise NotImplementedError
